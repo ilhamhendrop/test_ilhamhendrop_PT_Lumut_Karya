@@ -60,6 +60,7 @@ Route::middleware(['auth', 'role:author'])->group(function () {
     Route::controller(DashboardController::class)->group(function () {
         Route::get('/dashboard', 'index')->name('dashboard.index');
     });
+    
     Route::controller(PostController::class)->group(function () {
         Route::get('/dashboard/post', 'index_post')->name('post.index');
         Route::get('/dashboard/post/{post}/detail', 'detail_post')->name('post.detail');
