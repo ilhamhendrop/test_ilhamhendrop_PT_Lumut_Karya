@@ -58,7 +58,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="{{ route('user.store') }}" method="post">
+                <form action="{{ route('post.store') }}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="">Judul</label>
